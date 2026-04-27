@@ -4,7 +4,7 @@ A React app that visualizes any GitHub user's contribution history, language bre
 
 ![Dashboard Screenshot](screenshot.png)
 
-**Live:** <!-- add Vercel URL here after deploy -->
+**Live:** https://dev-dashboard-eight-liart.vercel.app
 
 ---
 
