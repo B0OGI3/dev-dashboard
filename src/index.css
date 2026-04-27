@@ -1,0 +1,110 @@
+/* ── Design tokens ────────────────────────────── */
+:root {
+  --bg: #0d1117;
+  --surface: #161b22;
+  --surface-hover: #1c2128;
+  --border: #30363d;
+  --text-primary: #e6edf3;
+  --text-secondary: #8b949e;
+  --accent: #58a6ff;
+
+  /* Contribution heatmap */
+  --contrib-0: #161b22;
+  --contrib-1: #0e4429;
+  --contrib-2: #006d32;
+  --contrib-3: #26a641;
+  --contrib-4: #39d353;
+
+  /* Skeleton shimmer */
+  --skeleton-base: #21262d;
+  --skeleton-shine: #30363d;
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f6f8fa;
+    --surface: #ffffff;
+    --surface-hover: #f0f3f6;
+    --border: #d0d7de;
+    --text-primary: #1f2328;
+    --text-secondary: #57606a;
+    --accent: #0969da;
+
+    --contrib-0: #ebedf0;
+    --contrib-1: #9be9a8;
+    --contrib-2: #40c463;
+    --contrib-3: #30a14e;
+    --contrib-4: #216e39;
+
+    --skeleton-base: #eaeef2;
+    --skeleton-shine: #f6f8fa;
+  }
+}
+
+/* ── Manual dark/light toggle class ──────────── */
+.dark {
+  --bg: #0d1117;
+  --surface: #161b22;
+  --surface-hover: #1c2128;
+  --border: #30363d;
+  --text-primary: #e6edf3;
+  --text-secondary: #8b949e;
+  --accent: #58a6ff;
+  --contrib-0: #161b22;
+  --contrib-1: #0e4429;
+  --contrib-2: #006d32;
+  --contrib-3: #26a641;
+  --contrib-4: #39d353;
+  --skeleton-base: #21262d;
+  --skeleton-shine: #30363d;
+}
+
+.light {
+  --bg: #f6f8fa;
+  --surface: #ffffff;
+  --surface-hover: #f0f3f6;
+  --border: #d0d7de;
+  --text-primary: #1f2328;
+  --text-secondary: #57606a;
+  --accent: #0969da;
+  --contrib-0: #ebedf0;
+  --contrib-1: #9be9a8;
+  --contrib-2: #40c463;
+  --contrib-3: #30a14e;
+  --contrib-4: #216e39;
+  --skeleton-base: #eaeef2;
+  --skeleton-shine: #f6f8fa;
+}
+
+/* ── Reset & base ────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  transition: background 0.2s, color 0.2s;
+}
+
+a {
+  color: var(--accent);
+}
+
+.section-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}

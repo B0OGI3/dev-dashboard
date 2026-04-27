@@ -1,0 +1,17 @@
+.rate-banner {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 0.2rem 0.6rem;
+}
+
+.rate-banner-warn {
+  color: #d4ac0d;
+  border-color: #d4ac0d44;
+  background: #d4ac0d11;
+}
